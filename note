@@ -1,0 +1,10 @@
+Dot (.) Operator: The pattern r"a.c" matches any character between 'a' and 'c'. It first uses re.match(), which checks only the beginning of the string, and then re.findall(), which finds all matches.
+Caret (^) Symbol: The ^ symbol checks if a string starts with a certain pattern. The pattern r"^abc" only matches if the string begins with "abc".
+Dollar ($) Symbol: The $ symbol checks if a string ends with a certain pattern. The pattern r"abc$" matches "abc" only if it appears at the end of the string.
+Square Brackets ([]): These are used to match any one character inside the brackets. For example, r"[aeiou]" finds vowels in the text.
+Hyphen (-) in Brackets: The - inside brackets is used to define a range. The pattern r"[0-9]" matches any digit from 0 to 9.
+Asterisk (*): The * symbol matches zero or more occurrences of the previous character. For example, r"abc*" matches "ab", "abc", "abcc", "abccc", etc.
+Plus (+): The + symbol matches one or more occurrences. r"abc+" finds "abc", "abcc", "abccc" but not just "ab".
+Question Mark (?): The ? symbol means zero or one occurrence. r"abc?" matches "ab" or "abc" but not "abcc".
+Parentheses (()): Parentheses are used for grouping patterns. r"(abc)+" matches repeated "abc" sequences like "abcabcabc".
+Backslash (\.): Normally, . in regex means "any character." But \. is used to match an actual dot in text. For example, r"\." is used to find dots in filenames like "file.txt".
